@@ -4,129 +4,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatima Boutique | Kuwait</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Fatima Boutique | Kuwait & Pakistan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #f4c430;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1612392061793-1e92dbb07b43?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #f4c430;
+            color: #111;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        .products {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .product p {
+            color: #666;
+            margin: 5px 0 10px;
+        }
+
+        .product button {
+            background: #111;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .product button:hover {
+            background: #f4c430;
+            color: #111;
+        }
+
+        .about,
+        .contact {
+            padding: 60px 10%;
+            text-align: center;
+            background: #fff;
+            margin-top: 40px;
+        }
+
+        .about h2,
+        .contact h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <header>
         <h1>Fatima Boutique</h1>
         <nav>
             <a href="#">Home</a>
-            <a href="#">Abayas</a>
-            <a href="#">Jewelry</a>
-            <a href="#">Handbags</a>
-            <a href="#">Skincare</a>
-            <a href="#">StudyTable</a>
-            <a href="#">Ladies&GentsGarments</a>
-            <a href="#">Contact</a>
+            <a href="#products">Collections</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
     <section class="hero">
-        <div class="hero-text">
-            <h2>Luxury Abayas, Jewelry & More</h2>
-            <p>Discover elegance and style at Fatima Boutique – Kuwait’s trusted online store.</p>
-            <a href="#products" class="btn">Shop Now</a>
-        </div>
+        <h2>Luxury Abayas, Jewelry & More</h2>
+        <p>Discover elegance from Kuwait & Pakistan — delivered with love.</p>
+        <a href="#products" class="btn">Shop Now</a>
     </section>
 
-    <!-- PRODUCT SECTION -->
     <section id="products" class="products">
         <h2>Our Collections</h2>
         <div class="product-grid">
 
             <div class="product">
-                <img src="https://images.unsplash.com/photo-1634313311513-c2b34a2e5c5d?auto=format&fit=crop&w=500&q=80"
-                    alt="Abaya Test" width="300">
-
-                <h3>Black Chiffon Abaya</h3>
+                <img src="c:\Users\DELL LATITUDE 5410\OneDrive\Desktop\gitmyproject\gitmyproject.jpg" alt="Abaya">
+                <h3>Golden Chiffon Abaya</h3>
                 <p>15 K.D</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
-                <img src="https://images.unsplash.com/photo-1617038182844-0e964a43a239?auto=format&fit=crop&w=500&q=80"
-                    alt="Crystal Necklace Set">
+                <img src="c:\Users\DELL LATITUDE 5410\OneDrive\Desktop\gitmyproject\gitmyproject.jpg" alt="Study Table">
+                <h3>Study Table</h3>
+                <p>20 K>D</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <div class="product">
+                <img src="c:\Users\DELL LATITUDE 5410\OneDrive\Desktop\gitmyproject\gitmyproject.jpg" alt="Jewelry">
                 <h3>Crystal Necklace Set</h3>
                 <p>12 K.D</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
-                <img src="https://images.unsplash.com/photo-1618354691438-25e64a4e1d5c?auto=format&fit=crop&w=500&q=80"
-                    alt="Classic Leather Handbag">
-
+                <img src="c:\Users\DELL LATITUDE 5410\OneDrive\Desktop\gitmyproject\gitmyproject.jpg" alt="Handbag">
                 <h3>Classic Leather Handbag</h3>
                 <p>18 K.D</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
-                <img src="https://images.unsplash.com/photo-1581093588401-22d3c6b62f2b?auto=format&fit=crop&w=500&q=80"
-                    alt="Luxury Skincare Set">
+                <img src="c:\Users\DELL LATITUDE 5410\OneDrive\Desktop\gitmyproject\gitmyproject.jpg" alt="Skincare">
                 <h3>Luxury Skincare Set</h3>
                 <p>10 K.D</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
-                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=500&q=80"
-                    alt="Men's Track Suit">
-                <h3>Winter Track Suit</h3>
-                <p>“Nike Club PK tracksuit KWD 15.46</p>
-                <button>Add to cart</button>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1622335782747-1a38b77b70a7?auto=format&fit=crop&w=500&q=80"
-                    alt="Luxury Pakistani Dress">
-                <h3>Luxury Pakistani Dresses</h3>
-                <p>20/30 K.D</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1621605815971-7f9f1ff8b2a0?auto=format&fit=crop&w=500&q=80"
-                    alt="Gents Formal Shirt">
-                <h3>Gents shirts</h3>
+                <img src="c:\Users\DELL LATITUDE 5410\OneDrive\Desktop\gitmyproject\gitmyproject.jpg" alt="Gents Shirt">
+                <h3>Gents Formal Shirt</h3>
                 <p>20 K.D</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
-                <img src="https://images.unsplash.com/photo-1616627985581-3cf7d6a6af40?auto=format&fit=crop&w=500&q=80"
-                    alt="Study Table">
-                <h3>Study Table </h3>
-                <p> 20 K.D</p>
+                <img src="c:\Users\DELL LATITUDE 5410\OneDrive\Desktop\gitmyproject\gitmyproject.jpg"
+                    alt="Pakistani Dresses">
+                <h3>Luxury Pakistani Dresses</h3>
+                <p>25 K.D</p>
                 <button>Add to Cart</button>
             </div>
 
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about">
+    <section id="about" class="about">
         <h2>About Fatima Boutique</h2>
-        <p>Fatima Boutique is a Kuwait-based online store offering premium abayas, jewelry, handbags, and beauty
-            essentials.
-            Our goal is to bring elegance and style to your wardrobe with love and quality.</p>
+        <p>Fatima Boutique is a Kuwait & Pakistan-based online brand offering elegant abayas, jewelry, handbags,
+            skincare, and gents wear. Our vision is to combine Middle Eastern luxury with South Asian grace — bringing
+            you timeless fashion at your doorstep.</p>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>📍 Kuwait City, Kuwait</p>
-        <p>📞 WhatsApp: +965 6000 0000</p>
-        <p>📧 Email: info@fatimaboutique.com</p>
+        <p>📍 Kuwait & Pakistan</p>
+        <p>📞 WhatsApp: 03168146821</p>
+        <p>📧 Email: bushraandleeb58@gmail.com</p>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <p>© 2025 Fatima Boutique | Kuwait | All Rights Reserved</p>
+        <p>© 2025 Fatima Boutique | All Rights Reserved</p>
     </footer>
 
 </body>
